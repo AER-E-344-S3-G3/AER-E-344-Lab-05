@@ -96,17 +96,17 @@ AOA = [-4;0;4;6;8;10;12;14;16];
 
 for i = 1:9
     Lift_per_unit(i,:) = NSum(i,:).*cosd(AOA(i,:))...
-        +ASum(i,:).*sind(AOA(i,:)); 
+        -ASum(i,:).*sind(AOA(i,:)); 
     Drag_per_unit(i,:) = NSum(i,:).*sind(AOA(i,:))...
-        -ASum(i,:).*cosd(AOA(i,:)); 
+        +ASum(i,:).*cosd(AOA(i,:)); 
     q(i,:) = 1.1.*(AverageAE(i,1) - AverageAE(i,2));
 end
 
 C_l = Lift_per_unit./q;
 C_d = Drag_per_unit./q;
-C_m = MSum/q;
+C_m = MSum./q;
 
-Averagedata_pressure = [Average];
+Averagedata_pressure = Average;
 
 for i=1:9
     C_p_table(i,:) = (Averagedata_pressure(i,:) - AverageAE(i,2))./q(i,:);
