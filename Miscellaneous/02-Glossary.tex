@@ -1,106 +1,94 @@
 % Place here all the terms that need definition within your document.
-\newglossaryentry{C_d}{
+\newglossaryentry{A'}{
+     name = $A'$,
+     description = {Total axial component of the pressure force acting on the airfoil}
+ }
+\newglossaryentry{C}{
+    name = $C$,
+    description = {Chord length}
+}
+\newglossaryentry{C_D}{
     name = $C_d$,
     description = {Dimensionless coefficient of drag}
+}
+\newglossaryentry{C_L}{
+    name = $C_l$,
+    description = {Dimensionless coefficient of lift}
+}
+\newglossaryentry{C_M}{
+    name = $C_m$,
+    description = {Dimensionless coefficient of moment}
 }
 \newglossaryentry{C_P}{
     name = $C_P$,
     description = {Dimensionless coefficient of pressure}
 }
-\newglossaryentry{C_L}{
-    name = $C_L$,
-    description = {Dimensionless coefficient of lift}
-}
-\newglossaryentry{C_M}{
-    name = $C_M$,
-    description = {Dimensionless coefficient of the moment}
-}
-\newglossaryentry{AOA}{
-    name = $AOA$,
-    description = {Angle of Attack}
-}
-\newglossaryentry{C_L}{
-    name = $C_L$,
-    description = {Dimensionless coefficient of lift}
-}
-\newglossaryentry{C}{
-    name = $C$,
-    description = {Cord Length}
-}
-\newglossaryentry{LE}{
-    name = $LE$,
-    description = {Leading Edge}
-}
-\newglossaryentry{TE}{
-    name = $TE$,
-    description = {Trailing Edge}
-}
-\newglossaryentry{x/c}{
-    name = $x/c$,
-    description = {Normalized X component}
-}
-\newglossaryentry{y/c}{
-    name = $y/c$,
-    description = {Normalized y Component}
-}
-\newglossaryentry{p_i}{
-    name = $p_i$,
-    description = {Pressure at i-th tap.}
-}
-\newglossaryentry{p_(i+1/2)}{
-    name = $p_(i+1/2)$,
-    description = {Pressure at i-th Panel n the Airfoil.}
-}
-\newglossaryentry{x_i}{
-    name = $x_i$,
-    description = {x-coordinate for the corresponding tap number}
-}
-\newglossaryentry{y_i}{
-    name = $y_i$,
-    description = {y-coordinate for the corresponding tap number}
-}
-\newglossaryentry{Delta x_i}{
-    name = $Delta x_i$,
-    description = {Average x coordinate between two points }
-}
-\newglossaryentry{Delta y_i}{
-    name = $Delta x_i$,
-    description = {Average y coordinate between two points }
-}
-\newglossaryentry{Delta y_i}{
-    name = $Delta y_i$,
-    description = {Average y coordinate between two points }
-}
-\newglossaryentry{Del N'_i}{
-    name = $Del N'_i$,
-    description = {The Normal Component of the pressure force acting on the i-th panel}
-}
-\newglossaryentry{Del A'_i}{
-    name = $Del A'_i$,
-    description = {The Axial Component of the pressure force acting on the i-th panel}
-}
-\newglossaryentry{Del M'_LE,i}{
-    name = $Del M'_LE,i$,
-    description = {The aerodynamic moment at the i-th panel.}
-}
-\newglossaryentry{N'_i}{
-    name = $Del N'_i$,
-    description = {The total Normal Component of the pressure force acting on the airfoil.}
-}
-\newglossaryentry{A'_i}{
-    name = $Del A'_i$,
-    description = {The total Axial Component of the pressure force acting on the airfoil.}
+\newglossaryentry{D'}{
+    name = $D'$,
+    description = {Drag force per unit span}
 }
 \newglossaryentry{L'}{
     name = $L'$,
-    description = {The total aerodynamic moment for the whole airfoil.}
+    description = {Lift force per unit span}
 }
-\newglossaryentry{Del N'_i}{
-    name = $Del N'_i$,
-    description = {The Normal Component of the pressure force acting on the i-th panel}
+\newglossaryentry{M'_LE}{
+    name = $M'_{LE}$,
+    description = {Total moment force caused by the pressure forces acting on the airfoil}
+}
+\newglossaryentry{N}{
+    name = $N$,
+    description = {Number of panels making up the airfoil surface}
+}
+\newglossaryentry{N'}{
+    name = $N'$,
+    description = {Total normal component of the pressure force acting on the airfoil}
+}
+\newglossaryentry{p_i}{
+    name = $p_i$,
+    description = {Pressure at the $i$th pressure tap}
+}
+\newglossaryentry{p_(i+1/2)}{
+    name = $p_{i+1/2}$,
+    description = {Pressure at the $i$th panel on the airfoil}
+}
+\newglossaryentry{x/c}{
+    name = $x/c$,
+    description = {Normalized $x$-coordinate}
+}
+\newglossaryentry{x_i}{
+    name = $x_i$,
+    description = {$x$-coordinate for the $i$th pressure tap}
+}
+\newglossaryentry{y/c}{
+    name = $y/c$,
+    description = {Normalized $y$-coordinate}
+}
+\newglossaryentry{y_i}{
+    name = $y_i$,
+    description = {$y$-coordinate for the $i$th pressure tap}
+}
+\newglossaryentry{alpha}{
+    name = $\alpha$,
+    description = {Angle of attack of an airfoil}
+}
+\newglossaryentry{Delta x_i}{
+    name = $\Delta x_i$,
+    description = {Distance between two $x$-coordinates}
+}
+\newglossaryentry{Delta y_i}{
+    name = $\Delta x_i$,
+    description = {Distance between two $y$-coordinate}
 }
 \newglossaryentry{Del A'_i}{
-    name = $Del A'_i$,
-    description = {The Axial Component of the pressure force acting on the i-th panel}
+    name = $\delta A'_i$,
+    description = {Axial component of the pressure force acting on the $i$th panel}
+}
+\newglossaryentry{Del M'_LE,i}{
+    name = {$\delta M'_{LE,i}$},
+    description = {Aerodynamic moment on the $i$th panel caused by the pressure forces on the airfoil}
+}
+\newglossaryentry{Del N'_i}{
+    name = $\delta N'_i$,
+    description = {Normal component of the pressure force acting on the $i$th panel}
 }
 

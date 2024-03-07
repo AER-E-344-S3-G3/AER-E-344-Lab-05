@@ -9,7 +9,6 @@
 \LoadClass[a4paper,twoside,11pt]{report}
 
 % Required Packages
-% Required Packages
 \usepackage{graphicx} % Required for including images
 \usepackage{amsmath} % Mathematical expressions
 \usepackage{amssymb} % Mathematical symbols
@@ -27,7 +26,24 @@
 % Colors
 \colorlet{redreport}{red!50!black}
 
+% Margins
+\usepackage[
+	top=2.5cm, % Top margin
+	bottom=2.5cm, % Bottom margin
+	left=3.2cm, % Left margin
+	right=3.2cm, % Right margin
+	footskip=1.6cm, % Space from the bottom margin to footer
+	headsep=0.75cm, % Space from the top margin to header
+	%showframe % Uncomment to show frames around the margins for debugging
+]{geometry}
 
+% Fonts
+\usepackage[utf8]{inputenc} % Required for international characters
+\usepackage[T1]{fontenc} % Font encoding for international characters
+\usepackage{newpxtext} % Alternative use of the PX fonts
+\usepackage{newpxmath} % Alternative use of the PX fonts (Math)
+\usepackage{microtype} % Slightly tweak font spacing for aesthetics
+\linespread{1.2} % Increase line spacing slightly
 
 % Glossary & Acronyms
 \usepackage[toc,acronym]{glossaries} 

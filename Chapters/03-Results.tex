@@ -1,3 +1,70 @@
 \chapter{Results}
 \label{cp:results}
-This is the results section.
+\autoref{fig:C_L vs. Angle of Attack.svg}, \autoref{fig:C_D vs. Angle of Attack.svg}, and \autoref{fig:C_M vs. Angle of Attack.svg} show the coefficient of lift, drag, and moment—\gls{C_L}, \gls{C_D}, and \gls{C_M}—at angles of attack of \qtyrange{-4}{16}{\degree}. These were calculated using the formulas described in \autoref{sec:derivations} and the script shown in \autoref{sec:code}.
+
+\begin{figure}[htpb]
+    \centering
+    \includesvg[width=0.75\linewidth]{Figures/C_L vs. Angle of Attack.svg}
+    \caption[Plot of the \gls{C_L} vs. Angle of Attack of the airfoil.]{Plot of the Coefficient of Lift vs. Angle of Attack.}
+    \label{fig:C_L vs. Angle of Attack.svg}
+\end{figure}
+
+\begin{figure}[htpb]
+    \centering
+    \includesvg[width=0.75\linewidth]{Figures/C_D vs. Angle of Attack.svg}
+    \caption[Plot of the \gls{C_D} vs. Angle of attack of the airfoil.]{Plot of the Coefficient of Drag vs. Angle of attack.}
+    \label{fig:C_D vs. Angle of Attack.svg}
+\end{figure}
+
+\begin{figure}[htpb]
+    \centering
+    \includesvg[width=0.75\linewidth]{Figures/C_M vs. Angle of Attack.svg}
+    \caption[Plot of the \gls{C_M} vs. Angle of attack of the airfoil.]{Plot of the Moment Coefficient vs. Angle of attack.}
+    \label{fig:C_M vs. Angle of Attack.svg}
+\end{figure}
+
+\autoref{fig:C_p vs. -4° Angle of Attack.svg}, \autoref{fig:C_P vs. 6° Angle of Attack.svg}, \autoref{fig:C_P vs. 10° Angle of Attack.svg}, and \autoref{fig:C_P vs. 16° Angle of Attack.svg} show the coefficient of pressure along the upper and lower surfaces of the airfoil for the respective angle of attack. These were calculated using equations derived in \autoref{sec:derivations} with the code shown in \autoref{sec:code}.
+
+\begin{figure}[htpb]
+    \centering
+    \includesvg[width=0.75\linewidth]{Figures/C_p vs. -4° Angle of Attack.svg}
+    \caption[Plot of the Coefficient of pressure in relationship to the normalized x component at a Angle of attack of -4 degrees]{Plot of the \gls{C_P} in relationship to the normalized $x$ component at an \acrshort{aoa} of \qty{-4}{\degree}.}
+    \label{fig:C_p vs. -4° Angle of Attack.svg}
+\end{figure}
+
+\begin{figure}[htpb]
+    \centering
+    \includesvg[width=0.75\linewidth]{Figures/C_P vs. 6° Angle of Attack.svg}
+    \caption[Plot of the Coefficient of pressure in relationship to the normalized x component at a Angle of attack of 6 degrees]{Plot of the \gls{C_P} in relationship to the normalized $x$ component at a \acrshort{aoa} of \qty{6}{\degree}.}
+    \label{fig:C_P vs. 6° Angle of Attack.svg}
+\end{figure}
+
+\begin{figure}[htpb]
+    \centering
+    \includesvg[width=0.75\linewidth]{Figures/C_P vs. 10° Angle of Attack.svg}
+    \caption[Plot of the Coefficient of pressure in relationship to the normalized x component at a Angle of attack of 10 degrees]{Plot of the \gls{C_P} in relationship to the normalized $x$ component at a \acrshort{aoa} of \qty{10}{\degree}.}
+    \label{fig:C_P vs. 10° Angle of Attack.svg}
+\end{figure}
+
+\begin{figure}[htpb]
+    \centering
+    \includesvg[width=0.75\linewidth]{Figures/C_P vs. 16° Angle of Attack.svg}
+    \caption[Plot of the Coefficient of pressure in relationship to the normalized x component at a Angle of attack of 16 degrees]{Plot of the \gls{C_P} in relationship to the normalized $x$ component at a \acrshort{aoa} of \qty{16}{\degree}.}
+    \label{fig:C_P vs. 16° Angle of Attack.svg}
+\end{figure}
+
+\newpage
+
+Using \autoref{eq:Re} and the following parameters, we find the Reynold's number shown below.
+
+\begin{equation}\label{eq:Re}
+    Re = \frac{\rho V L}{\mu}
+\end{equation}
+
+\begin{enumerate}
+    \item[] $\rho = \qty{1.225}{\kilogram\per\meter^3}$
+    \item[] $\mu = \qty{18.18e-06}{\pascal\second}$
+    \item[] $L = \qty{0.101}{\meter}$
+    \item[] $V = \qty{19.4}{\meter\per\second}$
+    \item[] $Re = \num{1.3203e5}$
+\end{enumerate}
